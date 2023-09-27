@@ -32,7 +32,6 @@
 }
 
 .plan__content {
-
     margin-top: 60px;
     display: flex;
     justify-content: space-around;
@@ -68,7 +67,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: 30px;
-
 }
 
 .plan__list {
@@ -92,9 +90,6 @@
 .plan__btn_bottom {
     display: flex;
     flex-direction: column;
-
-
-
 }
 
 .plan__title-sub {

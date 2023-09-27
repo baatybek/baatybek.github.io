@@ -1,47 +1,45 @@
 .card {
     margin: 20px auto; /* Top and bottom margin of 20px, and auto left and right margin for centering */
     width: 80%;
-    position: relative;
 }
 
 .card__card {
-    padding: 17.5px 70px;
-    display: flex;
-    flex-direction: column; /* Stack child elements vertically */
-    justify-content: center; /* Center children vertically */
-    align-items: center; /* Center children horizontally */
+    padding: 36px 30px 30px 30px;
+    max-width: 400px;
     border-radius: 10px;
-    background: #FFF;
-    height: 100%; /* Take the full height available */
+    border: 2px solid #DDD;
 }
 
+.card_container {
+    display: flex;
+    justify-content: center;
+}
 
 .card__title {
     color: #0B132A;
+    text-align: center;
     font-family: Rubik;
     font-size: 35px;
     font-style: normal;
     font-weight: 500;
-    line-height: 45px;
-    max-width: 371px;
-    margin: 0;  /* Reset default margin */
-    padding: 0; /* Reset default padding */
+    line-height: 50px;
+    max-width: 447px;
 }
 
 .card__description {
-    margin-top: 15px;  /* Adjusted spacing */
     color: #4F5665;
+    text-align: center;
     font-family: Rubik;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
-    margin-bottom: 0;  /* Reset default margin */
+    max-width: 555px;
 }
 
 .card__btns{
-    display: flex;
-    align-items: center;
+    align-items: auto;
+    position: auto;
 }
 .card__btn {
     padding: 17.5px 65px;
