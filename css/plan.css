@@ -1,9 +1,9 @@
 .plan {
-    margin-top: 80px
+    margin-top: 5rem; /* Changed from px to rem */
 }
 
 .plan__top {
-    margin-top: 211px;
+    margin-top: 13.2rem; /* Changed from px to rem */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,126 +13,100 @@
     color: #0B132A;
     text-align: center;
     font-family: Rubik;
-    font-size: 35px;
+    font-size: 2.2rem; /* Changed from px to rem */
     font-style: normal;
     font-weight: 500;
-    line-height: 50px;
+    line-height: 3.1rem; /* Changed from px to rem */
 }
 
 .plan__description {
-    margin-top: 20px;
+    margin-top: 1.25rem; /* Changed from px to rem */
     color: #4F5665;
     text-align: center;
     font-family: Rubik;
-    font-size: 16px;
+    font-size: 1rem; /* Changed from px to rem */
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
-    max-width: 555px;
+    line-height: 1.875rem; /* Changed from px to rem */
+    max-width: 34.7rem; /* Changed from px to rem */
 }
 
 .plan__content {
-
-    margin-top: 60px;
+    margin-top: 3.75rem; /* Changed from px to rem */
     display: flex;
     justify-content: space-around;
-    gap: 50px;
+    gap: 3.1rem; /* Changed from px to rem */
 }
 
 .plan__card {
-    padding: 79px 69px 50px 70px;
+    padding: 4.9rem 4.3rem 3.1rem 4.4rem; /* Changed from px to rem */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border-radius: 10px;
-    border: 2px solid #DDD;
+    border-radius: 0.625rem; /* Changed from px to rem */
+    border: 0.125rem solid #DDD; /* Changed from px to rem */
     background: #FFF;
+    transition: border-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .plan__card img {
-    max-width: 100px;
+    max-width: 6.25rem; /* Changed from px to rem */
 }
 
 .plan__card:hover {
-    border-radius: 10px;
-    border: 2px solid #F53838;
-    background: #FFF;
+    border-color: #F53838;
 }
 
 .plan__title-sub {
     color: #0B132A;
     text-align: center;
     font-family: Rubik;
-    font-size: 18px;
+    font-size: 1.6rem; /* Changed from px to rem */
     font-style: normal;
     font-weight: 500;
-    line-height: 30px;
-
+    line-height: 1.875rem; /* Changed from px to rem */
 }
 
 .plan__list {
     color: #4F5665;
     font-family: Rubik;
-    font-size: 14px;
+    font-size: 0.875rem; /* Changed from px to rem */
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 1.875rem; /* Changed from px to rem */
     list-style: none;
-    gap: 10px;
-    padding: 0%;
-}
-
-.plan__item {
-    display: flex;
-    justify-content: start;
-    gap: 20px;
-}
-
-.plan__btn_bottom {
-    display: flex;
-    flex-direction: column;
-
-
-
-}
-
-.plan__title-sub {
-    color: #0B132A;
-    text-align: center;
-    font-family: Rubik;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 30px;
-}
-
-.plan__span {
-    color: #4F5665;
-    font-family: Rubik;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
+    gap: 0.625rem; /* Changed from px to rem */
+    padding: 0;
 }
 
 .plan__btn {
-    padding: 13px 69px;
+    padding: 0.8rem 4.3rem; /* Changed from px to rem */
     color: #F53838;
     font-family: Rubik;
-    font-size: 16px;
-    font-style: normal;
+    font-size: 1rem; /* Changed from px to rem */
     font-weight: 700;
-    line-height: normal;
-    text-decoration-line: none;
-    border-radius: 10px;
-    border: 2px solid #DDD;
+    text-decoration: none;
+    border-radius: 3.1rem; /* Changed from px to rem */
+    border: 0.125rem solid #F53838; /* Changed from px to rem */
     background: #FFF;
-    border-radius: 50px;
-    border: 2px solid #F53838;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .plan__btn:hover {
-    border-radius: 50px;
-    background: #F53838;
+    background-color: #F53838;
+    color: #FFF;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .plan__content {
+        flex-direction: column; /* Stack items vertically on mobile */
+        gap: 2rem; /* Adjust gap for mobile */
+    }
+
+    .plan__card {
+        width: 100%; /* Take full width on mobile */
+        padding: 2.5rem; /* Adjust padding for mobile */
+    }
 }

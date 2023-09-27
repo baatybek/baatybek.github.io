@@ -1,5 +1,5 @@
 .VPN__content {
-    margin-top: 80px;
+    margin-top: 5rem; /* Changed from px to rem */
     display: flex;
     justify-content: space-between;
 }
@@ -7,35 +7,58 @@
 .VPN__title {
     color: #0B132A;
     font-family: Rubik;
-    font-size: 50px;
+    font-size: 3.125rem; /* Changed from px to rem */
     font-style: normal;
     font-weight: 500;
-    line-height: 70px;
-    max-width: 555px;
+    line-height: 4.375rem; /* Changed from px to rem */
+    max-width: 34.6875rem; /* Changed from px to rem */
 }
 
 .VPN__description {
-    margin-top: 15  px;
+    margin-top: 0.9375rem; /* Fixed typo and changed from px to rem */
     color: #4F5665;
     font-family: Rubik;
-    font-size: 16px;
+    font-size: 1rem; /* Changed from px to rem */
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
-    max-width: 555px;
-    margin-bottom: 50px;
+    line-height: 1.875rem; /* Changed from px to rem */
+    max-width: 34.6875rem; /* Changed from px to rem */
+    margin-bottom: 3.125rem; /* Changed from px to rem */
 }
 
 .VPN__btn-btns {
-    padding: 17.5px 77.5px;
+    padding: 1.09375rem 4.84375rem; /* Changed from px to rem */
     color: #FFF;
     font-family: Rubik;
-    font-size: 16px;
+    font-size: 1rem; /* Changed from px to rem */
     font-style: normal;
     font-weight: 700;
-    line-height: 25px;
+    line-height: 1.5625rem; /* Changed from px to rem */
     background: #F53838;
     text-decoration-line: none;
-    border-radius: 10px;
-    border: 2px solid #F53855;
+    border-radius: 0.625rem; /* Changed from px to rem */
+    border: 0.125rem solid #F53855; /* Changed from px to rem */
+    transition: 0.3s; /* Added transition for smooth hover effect */
+}
+
+.VPN__btn-btns:hover {
+    background: #FFF;
+    color: #F53838;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .VPN__content {
+        flex-direction: column; /* Stack items vertically on mobile */
+        align-items: center; /* Center items on mobile */
+    }
+
+    .VPN__title {
+        font-size: 2.5rem; /* Adjust font size for mobile */
+        line-height: 3.5rem; /* Adjust line height for mobile */
+    }
+
+    .VPN__description {
+        text-align: center; /* Center text on mobile */
+    }
 }

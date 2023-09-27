@@ -1,5 +1,5 @@
 .footer {
-    margin-top: 69px;
+    margin-top: 4.3rem; /* Changed from px to rem */
     position: relative;
     
 }
@@ -98,4 +98,94 @@
     line-height: 30px;
     text-decoration: none;
 
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .footer__content {
+        flex-direction: column; /* Stack items vertically on mobile */
+        align-items: center; /* Center items for a better look on mobile */
+    }
+
+    .footer__description {
+        text-align: center; /* Center text for mobile */
+        max-width: 90%; /* Allow some margin on the sides */
+    }
+
+    .footer__list-link {
+        justify-content: center; /* Center links on mobile */
+    }
+
+    .footer__mail {
+        text-align: center; /* Center email text on mobile */
+    }
+
+    .footer__list {
+        align-items: center; /* Center items on mobile */
+    }
+
+    .footer__title-sub {
+        flex-direction: column; /* Stack items vertically on mobile */
+    }
+
+    .footer__list-sup {
+        align-items: center; /* Center items on mobile */
+    }
+}
+
+@media (max-width: 480px) { /* Targeting very small screens */
+    .footer__description,
+    .footer__span,
+    .footer__mail,
+    .footer__spann,
+    .footer__item {
+        font-size: 1.125rem; /* Increase from 1rem to 1.125rem */
+    }
+
+    .footer__title-sub {
+        font-size: 1.25rem; /* Increase from 1.125rem to 1.25rem */
+    }
+}
+
+/* Hide the checkbox */
+#toggleFooterMenu {
+    display: none;
+}
+
+/* Default state: hide the list */
+#toggleFooterMenu ~ .footer__list-link {
+    display: none;
+}
+
+/* When checkbox is checked: show the list */
+#toggleFooterMenu:checked ~ .footer__list-link {
+    display: flex;
+}
+
+/* Style for the label (acting as our toggle button) */
+.footer__menu-label {
+    display: none; /* Hide by default */
+    cursor: pointer;
+    /* Add more styles (like padding, font-size, etc.) to make it look like a button */
+}
+
+/* On mobile devices, show the label (toggle button) */
+@media (max-width: 768px) {
+    .footer__menu-label {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer__item, /* or any other clickable class */
+    .footer__menu-label { /* if you're using the collapsible menu */
+        padding: 0.5rem; /* Add padding to increase touch target */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer__description {
+        margin-top: 1.5rem; /* Increase spacing */
+        max-width: 85%; /* Reduce max-width */
+    }
 }

@@ -1,6 +1,5 @@
 .happy {
-    margin-top: 50px;
-
+    margin-top: 3.125rem; /* Changed from px to rem */
 }
 
 .happy__top {
@@ -13,36 +12,36 @@
     color: #0B132A;
     text-align: center;
     font-family: Rubik;
-    font-size: 35px;
+    font-size: 2.1875rem; /* Changed from px to rem */
     font-style: normal;
     font-weight: 500;
-    line-height: 50px;
-    max-width: 447px;
+    line-height: 3.125rem; /* Changed from px to rem */
+    max-width: 27.9375rem; /* Changed from px to rem */
 }
 
 .happy__description {
     color: #4F5665;
     text-align: center;
     font-family: Rubik;
-    font-size: 16px;
+    font-size: 1rem; /* Changed from px to rem */
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
-    max-width: 555px;
+    line-height: 1.875rem; /* Changed from px to rem */
+    max-width: 34.6875rem; /* Changed from px to rem */
 }
 
 .happy__content {
-    margin-top: 60px;
+    margin-top: 3.75rem; /* Changed from px to rem */
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 3.125rem; /* Changed from px to rem */
 }
 
 .happy__card {
-    padding: 36px 30px 30px 30px;
-    max-width: 400px;
-    border-radius: 10px;
-    border: 2px solid #DDD;
+    padding: 2.25rem 1.875rem 1.875rem 1.875rem; /* Changed from px to rem */
+    max-width: 25rem; /* Changed from px to rem */
+    border-radius: 0.625rem; /* Changed from px to rem */
+    border: 0.125rem solid #DDD; /* Changed from px to rem */
 }
 
 .happy__img {
@@ -101,4 +100,26 @@
 }
 .happy__btn{
     margin-top: 82px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .happy__content {
+        flex-direction: column; /* Stack items vertically on mobile */
+        gap: 1.5rem; /* Adjust gap for mobile */
+    }
+
+    .happy__card {
+        max-width: 90%; /* Adjust width for mobile */
+        margin: 0 auto; /* Center the card on mobile */
+    }
+
+    .happy__title,
+    .happy__description {
+        padding: 0 1rem; /* Add some padding on the sides for better readability */
+    }
+
+    .happy__btn {
+        margin-top: 5.125rem; /* Adjust margin for mobile */
+    }
 }
