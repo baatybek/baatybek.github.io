@@ -1,10 +1,8 @@
 .card {
-    margin-top: 87px;
-    position: absolute;
+    margin: 20px 0;
+    position: relative;
     width: 80%;
     right: 10%;
-    
-
 }
 
 .card__card {
@@ -52,4 +50,18 @@
     background: #F53838;
     display: flex;
     align-items: center ;
+}
+
+/* Styles for tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .card {
+        margin: 30px 0; /* 30px top and bottom margin */
+    }
+}
+
+/* Styles for desktops */
+@media (min-width: 1024px) {
+    .card {
+        margin: 50px 0; /* 50px top and bottom margin */
+    }
 }
