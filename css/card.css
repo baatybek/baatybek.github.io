@@ -1,18 +1,20 @@
 .card {
-    margin: 20px 0;
-    position: relative;
+    margin: 20px auto; /* Top and bottom margin of 20px, and auto left and right margin for centering */
     width: 80%;
-    right: 10%;
+    position: relative;
 }
 
 .card__card {
     padding: 17.5px 70px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
     border-radius: 10px;
     background: #FFF;
+    height: 100%; /* Take the full height available */
 }
+
 
 .card__title {
     color: #0B132A;
@@ -22,20 +24,24 @@
     font-weight: 500;
     line-height: 45px;
     max-width: 371px;
+    margin: 0;  /* Reset default margin */
+    padding: 0; /* Reset default padding */
 }
 
 .card__description {
-    margin-top: 20px;
+    margin-top: 15px;  /* Adjusted spacing */
     color: #4F5665;
     font-family: Rubik;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
+    margin-bottom: 0;  /* Reset default margin */
 }
+
 .card__btns{
     display: flex;
-    align-items: center ;
+    align-items: center;
 }
 .card__btn {
     padding: 17.5px 65px;
