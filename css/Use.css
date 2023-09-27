@@ -1,56 +1,39 @@
 .Use {
-    padding: 4.2rem 5.6rem; /* Changed from px to rem */
-    margin-top: 7.5rem; /* Changed from px to rem */
+    padding: 67px 90px 67px 91px;
+    margin-top: 120px;
 }
-
-.Use__content {
+.Use__content{
     display: flex;
-    gap: 1rem; /* Added gap for spacing between buttons */
 }
-
 .Use__btn {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-radius: 1.25rem; /* Changed from px to rem */
-    margin-left: 0.625rem; /* Changed from px to rem */
-    height: 12.5rem; /* Changed from px to rem */
+    border-radius: 20px;
+    margin-left: 10px;
+    height: 200px;
     background-color: #fff;
     flex: 1;
     transition: .3s all ease;
 }
-
-.Use__btn:hover {
+.Use__btn:hover{
     flex: 2;
     background-color: rgb(207, 207, 207);
 }
-
 .Use__title-sub {
     color: #0B132A;
     font-family: Rubik;
-    font-size: 1.6rem; /* Changed from px to rem */
+    font-size: 25px;
     font-style: normal;
     font-weight: 700;
-    line-height: 1.875rem; /* Changed from px to rem */
+    line-height: 30px;
 }
 
 .Use__description {
     color: #4F5665;
     font-family: Rubik;
-    font-size: 1.25rem; /* Changed from px to rem */
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.875rem; /* Changed from px to rem */
-}
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-    .Use {
-        padding: 2rem; /* Adjust padding for mobile */
-    }
-
-    .Use__btn {
-        height: 10rem; /* Adjust height for mobile */
-        margin-left: 0; /* Remove margin-left on mobile */
-    }
+    line-height: 30px;
 }

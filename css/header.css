@@ -1,16 +1,16 @@
 .header__content {
-    margin-top: 3rem; /* Changed from px to rem */
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
 }
 
 .header__list {
     display: flex;
-    gap: 2.5rem; /* Changed from px to rem */
+    gap: 40px;
     list-style: none;
     color: #4F5665;
     font-family: Rubik;
-    font-size: 1rem; /* Changed from px to rem */
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -19,7 +19,7 @@
 .header__btnn {
     color: #0B132A;
     font-family: Rubik;
-    font-size: 1rem; /* Changed from px to rem */
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -32,62 +32,19 @@
 
 .header__right {
     display: flex;
-    gap: 2rem; /* Changed from px to rem */
+    gap: 30px;
 }
 
 .header__btn {
-    padding: 0.8rem 2.8rem; /* Changed from px to rem */
+    padding: 13px 45px;
     color: #F53855;
     font-family: Rubik;
-    font-size: 1rem; /* Changed from px to rem */
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     background: #FFF;
-    border-radius: 1.8rem; /* Changed from px to rem */
-    border: 0.125rem solid #F53855; /* Changed from px to rem */
+    border-radius: 30px;
+    border: 2px solid #F53855;
     text-decoration-line: none;
-}
-
-/* Hamburger Menu */
-#toggleHeaderMenu {
-    display: none; /* Hide the checkbox */
-}
-
-.header__list {
-    transition: max-height 0.3s ease-in-out; /* Smooth transition */
-    max-height: 0; /* Hide by default */
-    overflow: hidden;
-}
-
-#toggleHeaderMenu:checked ~ .header__list {
-    max-height: 500px; /* Adjust based on your needs */
-}
-
-.header__menu-label {
-    display: none; /* Hide by default */
-    cursor: pointer;
-    /* Add more styles (like padding, font-size, etc.) to make it look like a button */
-}
-
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-    .header__menu-label {
-        display: block; /* Show the hamburger menu on mobile */
-    }
-
-    .header__list,
-    .header__right {
-        align-items: center; /* Center items on mobile */
-    }
-
-    .header__btn {
-        margin: 0 auto; /* Center the button on mobile */
-    }
-}
-
-@media (max-width: 768px) {
-    .header__btnn {
-        margin-bottom: 1rem; /* Add some space below each item */
-    }
 }
