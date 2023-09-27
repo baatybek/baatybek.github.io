@@ -1,10 +1,23 @@
 main{
 
 }
-.container{
+.container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px; /* Added padding to the left and right */
 }
-.header__list{
+
+.header__list {
     text-decoration: none;
+}
+
+/* If .header__list contains links, style them */
+.header__list a {
+    text-decoration: none; /* Ensure links have no underline */
+    color: inherit; /* Ensure links inherit the color of their parent */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.header__list a:hover {
+    color: #F53838; /* Change color on hover, you can adjust this color */
 }
